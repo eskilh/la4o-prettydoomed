@@ -1,0 +1,21 @@
+# Authored on Windows, published from Linux runners. Normalise text to LF in the
+# repository so the checkout platform never shows the whole site as modified,
+# and mark the media explicitly so Git never rewrites a byte of it.
+
+*.html   text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+CNAME    text eol=lf
+.nojekyll text eol=lf
+
+*.wav    binary
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.webp   binary
+*.gif    binary
+*.svg    text eol=lf
+*.pdf    binary
+
+# Anything not named above: let Git decide, but still write LF into the repo.
+*        text=auto eol=lf
