@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doom.lb6aj.net/sitemap.xml
